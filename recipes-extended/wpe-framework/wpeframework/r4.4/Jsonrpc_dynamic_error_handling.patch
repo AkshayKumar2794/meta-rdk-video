@@ -126,7 +126,7 @@ index cef643f91..d59870ab9 100644
 +                                	response->Error.Text = _T("Firmware is already upto date");
 +                                	break;
 +                            	default:
-+                                	response->Error.Code = result;
++                                	response->Error.SetError(result);
 +                                	break;
 +				}
 +
